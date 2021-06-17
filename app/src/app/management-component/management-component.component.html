@@ -1,0 +1,14 @@
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" data-toggle="tab" [routerLink]="['user']" role="tab">用户管理</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" data-toggle="tab" [routerLink]="['product']" role="tab">产品管理</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" data-toggle="tab" [routerLink]="['exit']" role="tab">退出</a>
+    </li>
+</ul>
+<div>
+    <router-outlet></router-outlet>
+</div>
