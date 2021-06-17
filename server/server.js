@@ -94,7 +94,6 @@ app.put('/product', function (req, resp) {
     }
     resp.end();
 });
-
 app.post('/pid', function (req, resp) {
     var pid = [];
     var pnum = [];
