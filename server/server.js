@@ -95,6 +95,7 @@ app.put('/product', function (req, resp) {
     resp.end();
 });
 
+<<<<<<< HEAD
 app.post('/pid', function (req, resp) {
     var pid = [];
     var pnum = [];
@@ -106,6 +107,8 @@ app.post('/pid', function (req, resp) {
     resp.end();
 });
 
+=======
+>>>>>>> abbffa6eb8e81a075655957e6de31466fd688061
 /*初始化用户*/
 app.get('/students', function (req, resp) {
     resp.send(Student);
