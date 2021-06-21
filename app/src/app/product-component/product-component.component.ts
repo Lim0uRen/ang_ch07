@@ -17,11 +17,8 @@ export class ProductComponentComponent implements OnInit {
   product$: Observable<product>;
   currentProduct: product;
   options: any;
-<<<<<<< HEAD
   pid: [''];
   pnum: [''];
-=======
->>>>>>> abbffa6eb8e81a075655957e6de31466fd688061
   baseUrl = 'http://127.0.0.1:8080/';
   constructor(private fb: FormBuilder, private httpClient: HttpClient) {
     this.myForm = this.fb.group({
@@ -95,13 +92,11 @@ export class ProductComponentComponent implements OnInit {
   }
   ngOnInit(): void {
     this.product$ = <Observable<product>>this.httpClient.get(this.baseUrl + 'products');
-<<<<<<< HEAD
     this.httpClient.post(this.baseUrl + 'pid', this.myForm.value).subscribe(
       (val: any) => {
         this.pid = val.succ;
         this.pnum = val.s;
         this.options = {
-
           xAxis: {
             type: 'category',
             data: this.pid
@@ -124,8 +119,3 @@ export class ProductComponentComponent implements OnInit {
   }
 }
 
-=======
-  }
-
-}
->>>>>>> abbffa6eb8e81a075655957e6de31466fd688061

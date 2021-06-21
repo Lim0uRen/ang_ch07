@@ -94,6 +94,11 @@ app.put('/product', function (req, resp) {
     }
     resp.end();
 });
+<<<<<<< HEAD
+=======
+
+<<<<<<< HEAD
+>>>>>>> 061696350bc4d302c61b64be1d475cc274b10a89
 app.post('/pid', function (req, resp) {
     var pid = [];
     var pnum = [];
@@ -105,6 +110,11 @@ app.post('/pid', function (req, resp) {
     resp.end();
 });
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> abbffa6eb8e81a075655957e6de31466fd688061
+>>>>>>> 061696350bc4d302c61b64be1d475cc274b10a89
 /*初始化用户*/
 app.get('/students', function (req, resp) {
     resp.send(Student);
